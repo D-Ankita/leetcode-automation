@@ -1,4 +1,20 @@
 const { Builder, By, Key, until } = require('selenium-webdriver');
+const webdriver = require('selenium-webdriver');
+const chrome = require('selenium-webdriver/chrome');
+const chromeOptions = new chrome.Options();
+chromeOptions.addArguments('--headless');
+chromeOptions.addArguments('--disable-gpu');
+
+// Set the Chrome driver version
+const service = new chrome.ServiceBuilder(process.env.CHROMEWEBDRIVER).build();
+chrome.setDefaultService(service);
+
+// Set up the driver
+const driver = new webdriver.Builder()
+  .forBrowser('chrome')
+  .withCapabilities(webdriver.Capabilities.chrome())
+  .setChromeOptions(chromeOptions)
+  .build();
 
 (async function example() {
   // Set up Selenium WebDriver and navigate to LeetCode login page
