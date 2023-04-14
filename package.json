@@ -1,0 +1,11 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "description": "My project description",
+  "main": "index.js",
+  "dependencies": {
+    "selenium-webdriver": "^4.1.0",
+    "chromedriver": "^98.0.0",
+    "axios": "^0.26.0"
+  }
+}
