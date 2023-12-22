@@ -24,7 +24,7 @@ jobs:
         pip install selenium
 
     - name: Run Selenium script
-      run: python path/to/your/script.py
+      run: python script.py
       env:
         LEETCODE_USERNAME: ${{ secrets.LC_USERNAME }}
         LEETCODE_PASSWORD: ${{ secrets.LC_PASSWORD }}
