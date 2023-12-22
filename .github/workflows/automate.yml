@@ -25,6 +25,6 @@ jobs:
     - name: Run Selenium script
       run: python path/to/your/script.py
       env:
-        LEETCODE_USERNAME: ${{ secrets.LEETCODE_USERNAME }}
-        LEETCODE_PASSWORD: ${{ secrets.LEETCODE_PASSWORD }}
+        LEETCODE_USERNAME: ${{ secrets.LC_USERNAME }}
+        LEETCODE_PASSWORD: ${{ secrets.LC_PASSWORD }}
         # Add any other secrets or environment variables your script needs
